@@ -86,7 +86,7 @@ proc deposito*() =
         if nome==cliente.nome:
             echo "Digite o valor do deposito: "
             din=parseFloat(readline(stdin))
-            cliente.saldo=din
+            cliente.saldo=cliente.saldo+din
             
 proc listaClientes*() =
     for cliente in clientes :
